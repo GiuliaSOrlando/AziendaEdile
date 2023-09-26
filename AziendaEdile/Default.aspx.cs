@@ -39,7 +39,7 @@ namespace AziendaEdile
                 reader.Close();
 
             }
-            catch (Exception ex) { Response.Write("An error occurred: " + ex.Message); }
+            catch (Exception ex) { Response.Write("Error: " + ex.Message); }
             finally { conn.Close(); }
         }
 
@@ -59,7 +59,7 @@ namespace AziendaEdile
             }
             catch (Exception ex)
             {
-                Response.Write("An error occurred: " + ex.Message);
+                Response.Write("Error: " + ex.Message);
             }
             finally
             {

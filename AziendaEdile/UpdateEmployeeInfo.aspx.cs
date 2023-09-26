@@ -59,7 +59,7 @@ namespace AziendaEdile
             }
             catch (Exception ex)
             {
-                Response.Write("An error occurred: " + ex.Message);
+                Response.Write("Error: " + ex.Message);
             }
             finally
             {
@@ -110,7 +110,6 @@ namespace AziendaEdile
                 catch (Exception ex)
                 {
                     lblMessage.Text = "Errore durante il salvataggio delle modifiche: " + ex.Message;
-                    lblMessage.ForeColor = System.Drawing.Color.Red;
                 }
                 finally
                 {
